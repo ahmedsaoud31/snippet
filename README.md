@@ -20,6 +20,7 @@ tinymce.init({
 	]
 });
 
+
 to display the syntax highlighting for codes don't forget add this links in your page:
 <script type="text/javascript" src="path/to/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="path/to/js/jquery-migrate-1.1.1.min.js"></script>
