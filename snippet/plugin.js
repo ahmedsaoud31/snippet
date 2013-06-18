@@ -1,14 +1,12 @@
 /*
 * snippet plugin
 * v1.0
-* Written by Ahmed Aboelsaoud
-* https://github.com/ahmedsaoud31/snippet
-* 06/18/2013
-* Released under LGPL License.
+* By Ahmed Aboelsaoud
+* Date 06/17/2013
+* https://gethub.com/ahmedsaoud31
 */
 tinymce.PluginManager.add('snippet', function(editor) {
-  var code = '';
-	var code2 = '';
+	var code = '';
 	var defaultStyle = 'acid';
 	var settings = {};
 	settings['style'] = defaultStyle;
@@ -192,6 +190,8 @@ tinymce.PluginManager.add('snippet', function(editor) {
 					settings['box'] = lines;
 				}
 				editor.insertContent('<code class="snippet" style="background-color: #EEE;">{'+lang+' Code}<!--<pre lang="'+lang+'" settings=\''+JSON.stringify(settings)+'\'>'+code+'</pre>--></code>',{format: 'text'});
+				settings = {};
+				lang=defaultLang;
 			}
 		});
 	}
