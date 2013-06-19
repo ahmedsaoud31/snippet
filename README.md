@@ -11,7 +11,7 @@ tinymce.init({
   selector: "textarea",
 	theme: "modern",
 	plugins: [
-		"table preview image link media insertdatetime code bbcode snippet"
+		"table preview image link media insertdatetime code snippet"
 	],
 	toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image snippet",
 	toolbar2: "print preview media | forecolor backcolor emoticons",
