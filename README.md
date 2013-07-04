@@ -6,7 +6,8 @@ snippet is a tinymce v4.0 plugin build on Snippet "jQuery syntax highlighting pl
 to use it copy snippet folder into tinymce plugins folder.
 
 and config the editor to show snippet plugin:
-
+var scriptLoader = new tinymce.dom.ScriptLoader();
+scriptLoader.add('path/to/js/jquery-1.9.1.min.js');
 tinymce.init({
   selector: "textarea",
 	theme: "modern",
